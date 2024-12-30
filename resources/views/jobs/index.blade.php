@@ -3,13 +3,13 @@
         <section class="text-center pt-6">
             <h1 class="font-bold text-4xl">Let's Find Your Next Job</h1>
 
-            <form action="" class="mt-6">
-                <input
-                    type="text"
+            <x-forms.form action="/search" class="mt-6">
+                <x-forms.input
+                    name="q"
                     placeholder="Web Developer..."
-                    class="rounded-xl bg-white/25 border-white/10 px-5 py-4 w-full max-w-xl"
-                >
-            </form>
+                    :label="false"
+                />
+            </x-forms.form>
         </section>
 
         <section class="pt-10">
